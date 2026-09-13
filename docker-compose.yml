@@ -1,0 +1,9 @@
+services:
+  scanner:
+    build: .
+    container_name: crypto-top-gainer-scanner
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data

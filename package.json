@@ -1,0 +1,19 @@
+{
+  "name": "crypto-top-gainer-scanner",
+  "version": "2.0.0",
+  "private": true,
+  "description": "CoinGecko rank-1500 top-gainer scanner with micro-cap risk scoring and Telegram alerts.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "scan": "RUN_ONCE=true node src/index.js",
+    "chatid": "node src/get-chat-id.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3"
+  }
+}
